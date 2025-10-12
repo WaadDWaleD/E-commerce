@@ -5,9 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import 'swiper/css';
-import 'swiper/modules/navigation/navigation.min.css';
-import 'swiper/modules/autoplay/autoplay.min.css';
-import 'swiper/css';
+
 import 'swiper/css/navigation'; // فقط
 type MySwiperProps = {
   imageList?: string[];

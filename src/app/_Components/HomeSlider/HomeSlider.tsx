@@ -10,8 +10,8 @@ import img3 from "@images/slider-image-3.jpeg";
 import blog1 from "@images/blog-img-1.jpeg";
 import blog2 from "@images/blog-img-2.jpeg";
 import 'swiper/css';
-import 'swiper/modules/navigation/navigation.min.css';
-import 'swiper/modules/autoplay/autoplay.min.css';
+import 'swiper/css/navigation'; // فقط
+
 export default function HomeSlider() {
   return (
     <div className="w-full py-10 px-4 md:px-10 ">
