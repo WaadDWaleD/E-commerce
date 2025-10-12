@@ -2,7 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { getAllCategories } from "@/app/_services/categories.service";
 import MySwiper from "../MySwiper/MySwiper";
-
+import 'swiper/css';
+import 'swiper/modules/navigation/navigation.min.css';
+import 'swiper/modules/autoplay/autoplay.min.css';
 export default function CategoriesSlider() {
   const [categories, setCategories] = useState<any[]>([]);
 
