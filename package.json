@@ -1,18 +1,18 @@
 {
   "name": "next-test",
   "version": "0.1.0",
-   "homepage": "https://github.com/WaadDWaleD/E-commerce.git",
-
+  "homepage": "https://github.com/WaadDWaleD/E-commerce.git",
   "private": true,
   "scripts": {
-   "predeploy": "npm run build",
-   "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/react-slot": "^1.2.3",
