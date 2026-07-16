@@ -2,8 +2,8 @@ import { getSpecifiedProduct } from "@/app/_services/Products.service";
 import React from "react";
 import { Tag } from "lucide-react";
 import AddProductBtn from "@/app/_Components/AddProductBtn/AddProductBtn";
-import AddToWishlistButton from "@/app/AddToWishlistBtn/page";
-
+// import AddToWishlistButton from "@/app/AddToWishlistBtn/page";
+import AddToWishlistButton from "@/app/_Components/AddToWishlistButton/AddToWishlistButton";
 type ProductDetailsProps = {
   params: { id: string };
 };

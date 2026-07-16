@@ -19,7 +19,8 @@ export async function getAllProducts(): Promise<ProductType[]|null>
 
 }
 
-export async function getSpecifiedProduct(id: string): promise<ProductType | null>
+// export async function getSpecifiedProduct(id: string): promise<ProductType | null>
+export async function getSpecifiedProduct(id: string): Promise<ProductType | null>
 {
   try {
     const request = await fetch(`https://ecommerce.routemisr.com/api/v1/products/${id}`)
