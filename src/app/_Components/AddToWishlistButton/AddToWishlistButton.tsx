@@ -1,8 +1,13 @@
 'use client';
 
 import React, { useState } from "react";
-import { useWishlist } from "../wishList/WishlistContext";
-import { addProductToWishlistSer, removeProductFromWishlistSer } from "../_services/wishlist.services";
+// import { useWishlist } from "../wishList/WishlistContext";
+// import { addProductToWishlistSer, removeProductFromWishlistSer } from "../_services/wishlist.services";
+import { useWishlist } from "@/app/wishList/WishlistContext";
+import {
+  addProductToWishlistSer,
+  removeProductFromWishlistSer,
+} from "@/app/_services/wishlist.services";
 
 type AddToWishlistButtonProps = {
   productId: string;
