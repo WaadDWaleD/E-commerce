@@ -199,8 +199,7 @@ export async function addProductToCart(productId: string): Promise<AddResult> {
       data?.data?.numOfItems ??
       0;
 
-    revalidateTag('getUserCartSer');
-
+revalidateTag('getUserCartSer', 'max');
     return {
       success: true,
       message: 'added',
