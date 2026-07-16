@@ -4,8 +4,7 @@ import { getAllProducts } from "../_services/Products.service";
 import { ProductType } from "../_interfaces/products";
 
 export default async function Products() {
-      const allProducts: ProductType[] = await getAllProducts();
-    
+const allProducts: ProductType[] = (await getAllProducts()) || [];    
   return (
     <>
     <div className="container mx-auto px-4 py-8">

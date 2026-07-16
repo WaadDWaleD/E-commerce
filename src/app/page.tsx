@@ -9,8 +9,7 @@ import CategoriesSlider from "./_Components/CategoriesSlider/CategoriesSlider";
 const CategoriesSlide = lazy(() => import('./_Components/CategoriesSlider/CategoriesSlider'))
 
 export default async function Home() {
-  const allProducts: ProductType[] = await getAllProducts();
-
+const allProducts: ProductType[] = (await getAllProducts()) ?? [];
   return (
     <>
       

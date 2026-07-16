@@ -15,9 +15,15 @@ export type CartResonseType = {
 export async function getUserCartSer(): Promise<CartResonseType> {
   const token = await getUserTokenAuth(); // ✅ moved here
 
-  if (!token)
-    return { numOfCartItems: 0, products: [], totalCartPrice: 0 };
-
+  // if (!token)
+  //   return { numOfCartItems: 0, products: [], totalCartPrice: 0 };
+if (!token)
+    return {
+      cartId: "",
+      numOfCartItems: 0,
+      products: [],
+      totalCartPrice: 0,
+    };
   const res = await fetch("https://ecommerce.routemisr.com/api/v1/cart", {
     headers: { token: token as string },
     cache: "no-store", 
@@ -28,9 +34,16 @@ export async function getUserCartSer(): Promise<CartResonseType> {
   const final = await res.json();
   console.log("🧾 API Response Data:", final);
 
-  if (!final?.data)
-    return { numOfCartItems: 0, products: [], totalCartPrice: 0 };
+  // if (!final?.data)
+  //   return { numOfCartItems: 0, products: [], totalCartPrice: 0 };
 
+  if (!final?.data)
+    return {
+      cartId: "",
+      numOfCartItems: 0,
+      products: [],
+      totalCartPrice: 0,
+    };
   const {
     numOfCartItems,
     data: { products, totalCartPrice },

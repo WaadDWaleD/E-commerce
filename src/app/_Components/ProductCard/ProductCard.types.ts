@@ -1,5 +1,5 @@
-import { productType } from "@/app/_interfaces/products"
+import { ProductType } from "@/app/_interfaces/products"
 
-export type PtoductCardProps = {
-    product : productType
+export type ProductCardProps = {
+    product : ProductType
 }

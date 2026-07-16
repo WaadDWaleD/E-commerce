@@ -27,8 +27,7 @@ export default function RemoveItemBtn({
       }
 
       // حدث Navbar
-      updateCartCount(output.numOfCartItems);
-
+updateCartCount(output.numOfCartItems ?? 0);
       // حدث CartTable
       if (onRemoved) onRemoved(id);
 
